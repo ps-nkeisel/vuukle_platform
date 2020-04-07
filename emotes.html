@@ -21,6 +21,8 @@
         of Lorem Ipsum.
       </p>
 
+      <div id="vuukle-emotes"></div>
+
       <style>
         .wrapper {
           max-width: 780px;
@@ -44,7 +46,11 @@
         author: "123",
         tags: "123",
         title: "platform",
-        uri: "https://vuukle-platform.netlify.com/platform"
+        uri: "https://vuukle-platform.netlify.com/platform",
+
+        dev: {
+          emotesUrl: 'https://cdntest.vuukle.com/widgets/emotes.html'
+        }
       };
 
       // ⛔️ DON'T EDIT BELOW THIS LINE
@@ -52,7 +58,7 @@
         var d = document,
           s = d.createElement("script");
 
-        s.src = "https://cdntest.vuukle.com/improvement/platform.js";
+        s.src = "https://cdntest.vuukle.com/platform.js";
         (d.head || d.body).appendChild(s);
       })();
     </script>
