@@ -21,7 +21,7 @@
         of Lorem Ipsum.
       </p>
 
-      <div id="vuukle-emotes"></div>
+      <div id="vuukle-emote"></div>
 
       <style>
         .wrapper {
@@ -47,6 +47,26 @@
         tags: "123",
         title: "platform",
         uri: "https://vuukle-platform.netlify.com/platform",
+
+        emotes: {
+          enabled: true, //Enables Emote widget on the page
+          hideRecommendedArticles: false, //Hides Article recommendations on Emote selection size:
+          undefined, // icons size
+          firstImg: undefined, // Set here the image URL to the desired emoji or image
+          firstName: 'Happy', //Change the name of the Emote
+          secondImg: undefined,
+          secondName: 'Unmoved',
+          thirdImg: undefined,
+          thirdName: 'Amused',
+          fourthImg: undefined,
+          fourthName: 'Excited',
+          fifthImg: undefined,
+          fifthName: 'Angry',
+          sixthImg: undefined,
+          sixthName: 'Sad',
+          disable: [], //You can disable some emotes (Emotes id's 1,2,3,4,5,6)
+          customText: {}
+        },
 
         dev: {
           emotesUrl: 'https://cdntest.vuukle.com/widgets/emotes.html'
