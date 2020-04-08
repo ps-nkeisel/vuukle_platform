@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Powerbar-only</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Article</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting,remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+
+      <div id="vuukle-powerbar"></div>
+
+      <style>
+        .wrapper {
+          max-width: 780px;
+          margin: 0 auto;
+        }
+        .auth-wrapper {
+          padding: 30px 0;
+          text-align: right;
+        }
+      </style>
+    </div>
+
+    <!-- ⬇ WIDGETS CONFIG AND INITIALIZATION SCRIPT -->
+    <script>
+      VUUKLE_CONFIG = {
+        host: "vuukle-platform.netlify.com",
+        img:
+          "https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg",
+        apiKey: "664e0b85-5b2c-4881-ba64-3aa9f992d01c",
+        articleId: "platform",
+        author: "123",
+        tags: "123",
+        title: "platform",
+        uri: "https://vuukle-platform.netlify.com/powerbar",
+
+        dev: {
+          powerbarUrl: 'https://cdntest.vuukle.com/widgets/improvement/powerbar.html'
+        }
+      };
+
+      // ⛔️ DON'T EDIT BELOW THIS LINE
+      (function() {
+        var d = document,
+          s = d.createElement("script");
+
+        s.src = "https://cdntest.vuukle.com/platform.js";
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
